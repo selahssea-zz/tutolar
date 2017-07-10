@@ -4,11 +4,9 @@ import { HttpModule } from '@angular/http';
 
 import { NgModule } from '@angular/core';
 
-import {
-  AppPhoneListComponent,
-  FilterByNamePipe,
-  OrderByPipe
-} from './app-phone-list.component';
+import { AppPhoneListComponent } from './app-phone-list.component';
+import { OrderByPipe } from './orderby.pipe';
+import { FilterByNamePipe } from './filterbyname.pipe';
 
 @NgModule({
   declarations: [

@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppPhoneDetailComponent } from './app-phone-detail.component';
+import { CheckmarkPipe } from './checkmark.pipe';
 
 @NgModule({
   declarations: [
-    AppPhoneDetailComponent
+    AppPhoneDetailComponent,
+    CheckmarkPipe
   ],
   exports: [
     AppPhoneDetailComponent

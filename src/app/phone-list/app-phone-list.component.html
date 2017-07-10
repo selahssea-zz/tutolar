@@ -19,13 +19,14 @@
     <div class="col-md-10">
       <!--Body content-->
 
-      <ul>
-        <li *ngFor="let phone of phones | filterByName:query | orderBy:orderProp">
+      <ul class="phones">
+        <li *ngFor="let phone of phones | filterByName:query | orderBy:orderProp"
+            class="thumbnail phone-list-item">
 
-          <a href="#/phones/{{phone.id}}" class="thumb">
+          <a href="/phones/{{phone.id}}" class="thumb">
             <img src="assets/{{phone.imageUrl}}" alt="{{phone.name}}" />
           </a>
-          <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+          <a href="/phones/{{phone.id}}">{{phone.name}}</a>
           <p>{{phone.snippet}}</p>
 
         </li>
